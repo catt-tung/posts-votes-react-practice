@@ -1,5 +1,6 @@
 import { getPosts } from "../services/api-calls";
 import { useState, useEffect } from "react";
+import Button from "./Button/Button";
 
 const Posts = () => {
   const [posts, setPosts] = useState([])
@@ -16,6 +17,7 @@ const Posts = () => {
         <>
           <h4>{post.title}</h4>
           <p>{post.body}</p>
+          <Button />
         </>
         ))}
       </div>
