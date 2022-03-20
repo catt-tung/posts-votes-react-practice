@@ -1,5 +1,37 @@
 .App {
   text-align: center;
   margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.card {
+  border: solid 2px #b39d94;
+  margin: 10px;
+  width: 20rem;
+}
+
+.card-text {
+  padding: 15px;
+  text-align: left;
+}
+
+.heading {
+  text-align: center;
+}
+
+#upvote{
+  background-color: #e6e9af;
+  border: none;
+  color: #22223b;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+#downvote {
+  background-color: #fec89a;
+  color: #2e1013;
+  border: none;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}

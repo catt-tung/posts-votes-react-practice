@@ -12,15 +12,23 @@ const Posts = () => {
   
   return ( 
     <>
-      <div className="postcard">
+      
       {posts.map((post) => (
         <>
-          <h4>{post.title}</h4>
-          <p>{post.body}</p>
-          <Button />
+          <div className="card">
+            <div className="card-header">
+              <h5>{post.title}</h5>
+            </div>
+            <div className="card-text">
+              <p>{post.body}</p>
+            </div>
+            <div>
+              <Button />
+            </div>
+          </div>
         </>
         ))}
-      </div>
+      
     </>
   );
 }

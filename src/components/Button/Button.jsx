@@ -14,8 +14,8 @@ const Button = () => {
 
   return ( 
     <>
-      <button onClick={handleClick1}>Upvoted {count1} times</button>
-      <button onClick={handleClick2}>Downvoted {count2} times</button>
+      <button onClick={handleClick1} id="upvote" className="btn btn-primary btn-sm">Upvoted {count1} times</button>
+      <button id="downvote" onClick={handleClick2} className="btn btn-primary btn-sm">Downvoted {count2} times</button>
     </>
   );
 }
